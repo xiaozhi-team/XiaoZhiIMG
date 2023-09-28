@@ -148,29 +148,29 @@ switch ($stop) {
   
                         // 构建要删除的文件路径  
                         $filePath1 = $currentDirectory . '/install.php';  
-                        $filePath2 = $currentDirectory . '/install.spl';  
+                        $filePath2 = $currentDirectory . '/install.sql';  
   
                         // 检查文件是否存在  
                         if (file_exists($filePath1)) {  
                             // 删除 install.php 文件  
                             if (unlink($filePath1)) {  
-                                echo 'install.php 文件已成功删除。';  
+                                echo 'install.php 文件已成功删除。<br>';  
                             } else {  
-                                echo '删除 install.php 文件时发生错误。';  
+                                echo '删除 install.php 文件时发生错误，请手动删除。<br>';  
                             }  
                         } else {  
                             echo 'install.php 文件不存在。';  
                         }  
                         // 检查文件是否存在  
                         if (file_exists($filePath2)) {  
-                           // 删除 install.spl 文件  
+                           // 删除 install.sql 文件  
                             if (unlink($filePath2)) {  
-                                echo 'install.spl 文件已成功删除。';  
+                                echo 'install.sql 文件已成功删除。<br>';  
                             } else {  
-                                echo '删除 install.spl 文件时发生错误。';  
+                                echo '删除 install.sql 文件时发生错误，请手动删除。<br>';  
                             }  
                         } else {  
-                            echo 'install.spl 文件不存在。';  
+                            echo 'install.spl 文件不存在。<br>';  
                         }  
                         ?>
                                 <a href="/" class="btn btn-default">访问前台</a>
@@ -193,7 +193,7 @@ switch ($stop) {
                     </thead>
                     <tbody>
                     <tr>
-                        <td>PHP版本 &gt; 5.3</td>
+                        <td>PHP版本 &gt; 7.2</td>
                         <td>
                             <?php if($is['php_version_gt530']) { ?>
                             <span class="text-success glyphicon glyphicon-ok-sign" aria-hidden="true"></span> 支持
