@@ -136,7 +136,7 @@ switch ($stop) {
                     <div class="row">
                         <div class="col-md-4">
                             <div class="">
-                                <img width="100%" src="./static/images/preview.jpg">
+                                <img width="100%" src="./static/images/logo.png">
                             </div>
                         </div>
                         <div class="col-md-6">
