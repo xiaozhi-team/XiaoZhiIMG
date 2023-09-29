@@ -26,8 +26,11 @@ QQ:1876907451(有任何问题可以问我)
 PHP/HTML我不是很懂，有bug希望大佬能解答
 */
 
-if (!file_exists("../app/db.php") || (file_exists("../app/db.php") && file_get_contents("../app/db.php") == "")) exit(header("location: install.php"));
-
+//if (!file_exists("../app/db.php") || (file_exists("../app/db.php") && file_get_contents("../app/db.php") == "")) exit(header("location: install.php"));
+if (!file_exists("../app/db.php") || (file_exists("../app/db.php") && file_get_contents("../app/db.php") == "")) {  
+    echo "你还未安装！<a href='install.php'>点击安装</a>";  
+    exit;
+}
 // 定义应用目录
 define('APP_PATH', __DIR__ . '/../app/');
 // 绑定到index模块
