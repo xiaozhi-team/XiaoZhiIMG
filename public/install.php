@@ -108,7 +108,7 @@ switch ($stop) {
                     </div>
                     <div class="form-group">
                         <label for="db_pass">数据库密码</label>
-                        <input type="password" class="form-control" required id="db_pass" name="db_pass" value="" placeholder="数据库密码">
+                        <input type="text" class="form-control" required id="db_pass" name="db_pass" value="dbpassword" placeholder="数据库密码">
                     </div>
                     <div class="form-group">
                         <label for="db_port">数据库连接端口</label>
